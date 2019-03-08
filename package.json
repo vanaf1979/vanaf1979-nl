@@ -21,11 +21,15 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "copy-webpack-plugin": "^5.0.0",
-    "imagemin-mozjpeg": "^8.0.0",
-    "imagemin-webpack-plugin": "^2.4.2",
+    "animejs": "^3.0.1",
+    "bigpicture": "^2.1.1",
+    "in-view": "^0.6.1",
+    "jarallax": "^1.10.7",
     "laravel-mix": "^4.0.14",
+    "purecss": "^1.0.0",
     "sass": "^1.16.1",
-    "sass-loader": "^7.1.0"
+    "sass-loader": "^7.1.0",
+    "slideout": "^1.0.1",
+    "swiper": "^4.5.0"
   }
 }
