@@ -1,16 +1,16 @@
 
 
 .contact {
-    background: #202020;
-    background-image: url(/app/themes/vanaf1979/public/img/adam-solomon-472458-unsplash.jpg);
+    background: #2c3339;
+    background-image: url(/wp-content/themes/vanaf1979/public/img/alvaro-serrano-133360-unsplash.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background: #2c3339;
+    //background: #2c3339;
 }
      .contact .inner {
         padding: 60px 0px 60px 0px;
-        // background: rgba( 0 , 0 , 0 , 0.9);
+        background: rgba(38, 41, 46, 0.9);
     }
         .contact .inner .va-grid-center {
             padding: 0px 20px 0px 20px;
@@ -21,8 +21,8 @@
     }
         .contact header h3 {
             color: #bbbbbb;
-            font-size: 30px;
-            text-transform: uppercase;
+            font-size: 26px;
+            //text-transform: uppercase;
             margin: 0px 0px 0px 0px;
             padding: 0px 0px 0px 0px;
         }
@@ -48,9 +48,12 @@
             height: 36px;
             color: #bbbbbb;
             transition: all 0.2s ease;
+            background: none;
+            border-radius: none;
+            border-bottom: solid 1px #efefef;
         }
             .contact .va-formwrapper input[type="submit"]:hover {
-                border-bottom: dotted 1px #aaaaaa;
+                border-bottom: solid 1px #aaaaaa;
                 padding: 2px 25px 2px 25px;
             }
 
