@@ -20,7 +20,7 @@
         
                 <div class="image pure-u-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-2 pure-u-xl-2">
                 
-                    <img src="/app/themes/vanaf1979/public/img/wordpress-dev-monthly-recap-february-socials.jpg" alt="" />
+                    <img src="/wp-content/themes/vanaf1979/public/img/wordpress-dev-monthly-recap-february-socials.jpg" alt="" />
         
                 </div>
                 
@@ -42,7 +42,7 @@
         
                 <div class="image pure-u-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-2 pure-u-xl-2">
                 
-                    <img src="/app/themes/vanaf1979/public/img/wordpress-dev-monthly-recap-february-socials.jpg" alt="" />
+                    <img src="/wp-content/themes/vanaf1979/public/img/wordpress-dev-monthly-recap-february-socials.jpg" alt="" />
         
                 </div>
                 
@@ -64,7 +64,7 @@
         
                 <div class="image pure-u-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-2 pure-u-xl-2">
                 
-                    <img src="/app/themes/vanaf1979/public/img/wordpress-dev-monthly-recap-february-socials.jpg" alt="" />
+                    <img src="/wp-content/themes/vanaf1979/public/img/wordpress-dev-monthly-recap-february-socials.jpg" alt="" />
         
                 </div>
                 

@@ -16,6 +16,7 @@ var HeaderSlider = {
         // Is the slider present on the page?
         if( this.slider )
         {
+            
             var slides = Utils.findAll( '.swiper-slide' , this.slider );
             
             // Are there multiple slides?
@@ -59,6 +60,7 @@ var HeaderSlider = {
         {
             // Reveal the Swiper controls.
             this.activateSwiperControls(); 
+            console.log('here');
 
             // Initialize Swiper.
             this.swiper = new Swiper( this.slider , {

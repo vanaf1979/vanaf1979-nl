@@ -6,8 +6,8 @@
             
             <article>
 
-                <a class="introbigpicture" href="/app/themes/vanaf1979/public/img/avatar.jpg">
-                    <img src="/app/themes/vanaf1979/public/img/avatar.jpg" alt="" />
+                <a class="introbigpicture" href="/wp-content/themes/vanaf1979/public/img/avatar.jpg">
+                    <img src="/wp-content/themes/vanaf1979/public/img/avatar.jpg" alt="" />
                 </a>
 
                 <h1>Va79 Wordpress Developer</h1>

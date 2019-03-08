@@ -10,7 +10,7 @@
 
             if( $slides == false )
             {
-                $slides = get_field( 'slides' , 18 );
+                $slides = get_field( 'slides' , 12 );
             }
 
             foreach( $slides as $slide )

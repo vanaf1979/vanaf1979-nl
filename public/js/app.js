@@ -232,7 +232,8 @@ var HeaderSlider = {
   activateSwiper: function activateSwiper() {
     if (!this.swiper) {
       // Reveal the Swiper controls.
-      this.activateSwiperControls(); // Initialize Swiper.
+      this.activateSwiperControls();
+      console.log('here'); // Initialize Swiper.
 
       this.swiper = new swiper__WEBPACK_IMPORTED_MODULE_2__["default"](this.slider, {
         slidesPerView: 1,

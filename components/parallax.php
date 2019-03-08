@@ -2,7 +2,7 @@
 
     <div data-jarallax data-speed="0.4" class="jarallax" style="height: 350px;">
                                            
-        <img class="jarallax-img" src="/app/themes/vanaf1979/public/img/aaron-burden-64849-unsplash.jpg" alt="">
+        <img class="jarallax-img" src="/wp-content/themes/vanaf1979/public/img/aaron-burden-64849-unsplash.jpg" alt="">
         
         <div class="jarallax-content">
             
