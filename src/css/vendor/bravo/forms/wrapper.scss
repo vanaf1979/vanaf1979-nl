@@ -1,0 +1,33 @@
+
+
+.formwrap {
+    display: block;
+    width: auto;
+    clear: both;
+    margin: 0px 0px 5px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.formwrap:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+// Responsive
+
+@media screen and ( max-width: $breakpoint-lg )
+{
+
+}
+
+@media screen and ( max-width: $breakpoint-md )
+{
+
+}
+
+@media screen and ( max-width: $breakpoint-wm )
+{
+    
+}

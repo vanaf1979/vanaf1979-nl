@@ -1,0 +1,66 @@
+
+
+// Breakpoints
+$breakpoint-lg: 1024px;
+$breakpoint-md: 768px;
+$breakpoint-wm: 568px;
+
+$bravo-spacer: 1rem;
+$bravo-radio: 1.618;
+
+
+// Typography
+$bravo-font-stack:           'Open Sans', Helvetica, Arial, sans-serif;
+$bravo-font-size:            14px;
+$bravo-font-weight:          200;
+$bravo-line-height:          14px;
+$bravo-letter-spacing:       1.2px;
+$bravo-text-size-adjust:     100%;
+
+$bravo-heading-font-weight:  300;
+$bravo-headings-line-height: 1.5rem;
+
+$bravo-font-color:         #606c76;
+$bravo-font-heading-color: #7948A6;
+$bravo-font-anchor-color:  #7948A6;
+
+
+// Forms
+$bravo-input-width:          100%;
+$bravo-input-height:         40px;
+$bravo-input-margin:         0px 0px 0px 0px;
+$bravo-input-padding:        2px 5px 2px 2px;
+$bravo-input-background:   #ffffff;
+$bravo-input-border:       #d1d1d1;
+$bravo-input-highlight:    #9b4dca;
+$bravo-input-radius:         5px;
+
+
+$bravo-textarea-height:      $bravo-input-height * 3;
+$bravo-textarea-width:       $bravo-input-width;
+
+$bravo-button-color:         $bravo-input-highlight;
+$bravo-button-padding:       5px 15px 5px 15px;
+
+
+
+
+
+
+
+// Responsive
+
+@media screen and ( max-width: $breakpoint-lg )
+{
+    $bravo-font-size: 14px;
+}
+
+@media screen and ( max-width: $breakpoint-md )
+{
+    $bravo-font-size: 14px;
+}
+
+@media screen and ( max-width: $breakpoint-wm )
+{
+    $bravo-font-size: 16px;
+}

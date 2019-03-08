@@ -1,0 +1,46 @@
+
+*,
+html,
+body {
+    font-family: $bravo-font-stack;
+    font-size: $bravo-font-size;
+    font-weight: $bravo-font-weight;
+    line-height: $bravo-line-height;
+    letter-spacing: $bravo-letter-spacing;
+    text-size-adjust: $bravo-text-size-adjust;
+
+    color: $bravo-font-color;
+
+    //-webkit-font-smoothing: none;
+    /*-webkit-font-smoothing: subpixel-antialiased;*/
+    /*-webkit-font-smoothing: antialiased;*/
+
+    box-sizing: border-box;
+}
+
+* {
+    font-family: $bravo-font-stack;
+    font-size: $bravo-font-size;
+    font-weight: $bravo-font-weight;
+    line-height: $bravo-line-height;
+    letter-spacing: $bravo-letter-spacing;
+    text-size-adjust: $bravo-text-size-adjust;
+
+    color: $bravo-font-color;
+    
+    //-webkit-font-smoothing: none;
+    //-webkit-font-smoothing: subpixel-antialiased;
+    //-webkit-font-smoothing: antialiased;
+
+    box-sizing: border-box;
+}
+
+
+@media screen and ( max-width: 568px )
+{
+    *,
+    html,
+    body {
+        font-size: $bravo-font-size;
+    }
+}

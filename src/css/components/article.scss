@@ -1,0 +1,37 @@
+
+
+.article {
+    margin: 30px 0px 60px 0px;
+}
+    .article article {
+        margin: 0px 40px 0px 0px;
+    }
+        .article article ul {
+            
+        }
+        .article article h1 {
+            margin: 0px 0px 30px 0px;
+        }
+        .article article a {
+            color: #007fac;
+            text-decoration: none;
+        }
+            .article article a:hover {
+                text-decoration: underline;
+            }
+
+        .article article .wp-block-coblocks-gist {
+            margin: 20px 0px 40px 0px;
+            font-size: 12px !important;
+        }
+
+    .article .sidebar section {
+        margin: 3px 0px 0px 0px;
+        padding: 0px 0px 0px 40px;
+        border-left: solid 1px #dddddd;
+    }
+    .article .sidebar section ul {
+        list-style: none;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+    }

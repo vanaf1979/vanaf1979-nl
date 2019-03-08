@@ -1,0 +1,27 @@
+
+
+input[type="checkbox"] {
+    display: block;
+    width: 22px;
+    height: 22px;
+    padding: 0px 0px 0px 0px;
+    margin: 2px 0px 0px 0px;
+}
+
+
+// Responsive
+
+@media screen and ( max-width: $breakpoint-lg )
+{
+
+}
+
+@media screen and ( max-width: $breakpoint-md )
+{
+
+}
+
+@media screen and ( max-width: $breakpoint-wm )
+{
+    
+}

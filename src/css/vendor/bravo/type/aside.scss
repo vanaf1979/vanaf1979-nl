@@ -1,0 +1,22 @@
+
+
+aside {
+    display: block;
+    line-height: 1.8em;
+    margin: 10px 0px 10px 0px;
+    padding: 10px 15px 10px 15px;
+    background: #f4f5f6;
+    border-left: solid 2px lightblue;
+}
+
+aside.success {
+    border-left: solid 2px green;
+}
+
+aside.warning {
+    border-left: solid 2px yellow;
+}
+
+aside.danger {
+    border-left: solid 2px red;
+}

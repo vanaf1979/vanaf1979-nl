@@ -1,0 +1,27 @@
+
+
+blockquote {
+    display: block;
+    line-height: 1.8em;
+    margin: 10px 0px 10px 0px;
+    padding: 10px 15px 10px 15px;
+    background: #f4f5f6;
+    border-left: solid 2px lightblue;
+}
+
+blockquote:before {
+    content: '"';
+    font-size: 1.5rem;
+    color: #629f51;
+}
+
+blockquote:after {
+    content: '"';
+    font-size: 1.5rem;
+    color: #629f51;
+}
+
+blockquote p {
+    padding: 0;
+    margin: 0;
+}

@@ -1,0 +1,71 @@
+
+
+h1, h1 a,
+h2, h2 a,
+h3, h3 a,
+h4, h4 a,
+h5, h5 a,
+h6, h6 a {
+    display: block;
+    margin: 0em 0em 0.5em 0em;
+    padding: 0em;
+   
+    font-weight: $bravo-heading-font-weight;
+    color: $bravo-font-heading-color;
+    text-decoration: none;
+}
+
+h1,
+h1 a {
+    font-size: $bravo-font-size * 2.5;
+    line-height: 1.3em;
+}
+
+h2,
+h2 a {
+    font-size: $bravo-font-size * 2.0;
+    line-height: 1.3em;
+}
+
+h3,
+h3 a {
+    font-size: $bravo-font-size * 1.75;
+    line-height: 1.3em;
+}
+
+h4,
+h4 a {
+    font-size: $bravo-font-size * 1.5;
+    line-height: 1.3em;
+}
+
+h5,
+h5 a {
+    font-size: $bravo-font-size * 1.25;
+    line-height: 1.3em;
+}
+
+h6,
+h6 a {
+    font-size: $bravo-font-size * 1.0;
+    line-height: 1.3em;
+}
+
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+    text-decoration: underline;
+}
+
+p + h1, ul + h1,
+p + h2, ul + h2,
+p + h3, ul + h3,
+p + h4, ul + h4,
+p + h5, ul + h5,
+p + h6, ul + h6 {
+    /// margin-top: $bravo-spacer / 2;
+}

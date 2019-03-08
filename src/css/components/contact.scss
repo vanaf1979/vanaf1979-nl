@@ -1,0 +1,79 @@
+
+
+.contact {
+    background: #202020;
+    background-image: url(/app/themes/vanaf1979/public/img/adam-solomon-472458-unsplash.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: #2c3339;
+}
+     .contact .inner {
+        padding: 60px 0px 60px 0px;
+        // background: rgba( 0 , 0 , 0 , 0.9);
+    }
+        .contact .inner .va-grid-center {
+            padding: 0px 20px 0px 20px;
+        }
+    .contact header {
+        text-align: center;
+        margin: 0px 0px 30px 0px;
+    }
+        .contact header h3 {
+            color: #bbbbbb;
+            font-size: 30px;
+            text-transform: uppercase;
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+        }
+            .contact header h3 span {
+                color: #bbbbbb;
+                font-size: 30px;
+                text-transform: uppercase;
+            }
+        .contact header p {
+            color: #bbbbbb;
+        }
+
+    .contact .left .va-formwrapper {
+        margin: 0px 10px 20px 0px;
+    }
+    .contact .right .va-formwrapper {
+        margin: 0px 0px 20px 10px;
+    }
+
+        .contact .va-formwrapper input[type="submit"] {
+            margin: 20px auto 0px auto;
+            padding: 2px 20px 2px 20px;
+            height: 36px;
+            color: #bbbbbb;
+            transition: all 0.2s ease;
+        }
+            .contact .va-formwrapper input[type="submit"]:hover {
+                border-bottom: dotted 1px #aaaaaa;
+                padding: 2px 25px 2px 25px;
+            }
+
+@media screen and ( max-width: 1024px )
+{
+
+}
+
+@media screen and ( max-width: 768px )
+{
+
+}
+
+@media screen and ( max-width: 568px )
+{
+    .contact header h3 span {
+        display: block;
+    }
+    .contact header p {
+        display: none;
+    }
+    .contact .left .va-formwrapper, .contact .right .va-formwrapper {
+        margin: 0px 0px 30px 0px;
+    }
+
+}

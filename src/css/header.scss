@@ -1,0 +1,32 @@
+/* Import NPM Modules */
+//@import '~purecss/build/base.css';
+@import '~purecss/build/grids.css';
+@import '~purecss/build/grids-core.css';
+@import '~purecss/build/grids-responsive.css';
+
+/* Import External Fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+// @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+
+/* Import utilities */
+//@import 'utils/va79/forms.css';
+//@import 'utils/va79/typo.css';
+//@import 'utils/va79/utils.css';
+@import 'vendor/bravo/bravo.scss';
+
+
+/* Import theme css files */
+@import 'components/app.scss';
+@import 'components/main-nav.scss';
+@import 'components/slider.scss';
+@import 'components/breadcrumbs.scss';
+@import 'components/intro.scss';
+@import 'components/projects.scss';
+@import 'components/parallax.scss';
+@import 'components/writing.scss';
+
+@import 'components/article.scss';
+
+@import 'components/contact.scss';
+@import 'components/footer.scss';

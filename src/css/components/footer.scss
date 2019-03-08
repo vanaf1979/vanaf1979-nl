@@ -1,0 +1,95 @@
+
+
+.footer {
+    padding: 40px 0px 0px 0px;
+    background: #252a30;
+}
+    .footer section {
+        margin: 0px 20px 0px 20px;;
+    }
+        .footer .first section {
+            margin: 0px 60px 0px 20px;;
+        }
+
+        .footer section h5 {
+            font-size: 14px;
+            color: #aaaaaa;
+            margin: 0px 0px 10px 0px;
+            line-height: 1.2rem;
+        }
+        .footer section p {
+            color: #bbbbbb;
+            font-size: 13px;
+            margin: 1px 0px 0px 0px;
+        }
+            .footer section p a {
+                font-size: 13px;
+                color: #bbbbbb;
+            }
+                .footer section p a:hover {
+                    text-decoration: underline;
+                }
+        .footer section ul {
+            display: inline-block;
+            list-style: none;
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+        }
+            .footer section ul li {
+                margin: 0px 0px 0px 0px;
+                padding: 0px 0px 0px 0px;
+            }
+                .footer section ul li span {
+                    padding: 0px 4px 0px 0px;
+                    color: #bbbbbb;
+                }    
+                .footer section ul li a {
+                    color: #bbbbbb;
+                    font-size: 13px;
+                }
+   
+    .footer .meta {
+        padding: 20px 20px 0px 20px;
+        text-align: center;
+    }
+        .footer .meta p {
+            width: 100%;
+            font-size: 12px;
+            color: #bbbbbb;
+            text-align: center;
+            line-height: 16px;
+        }
+            .footer .meta p a {
+                color: #bbbbbb;
+                text-decoration: none;
+                font-size: 12px;
+            }
+                .footer .meta p a:hover {
+                    color: #bbbbbb;
+                    text-decoration: underline;
+                }
+
+@media screen and ( max-width: 1024px )
+{
+
+}
+
+@media screen and ( max-width: 768px )
+{
+
+}
+
+@media screen and ( max-width: 568px )
+{
+    .footer section, .footer .first section {
+        margin: 0px 20px 40px 20px;;
+    }
+
+    .footer .meta {
+        padding: 0px 20px 0px 20px;
+        text-align: left;
+    }
+        .footer .meta p {
+            text-align: left;
+        }
+}

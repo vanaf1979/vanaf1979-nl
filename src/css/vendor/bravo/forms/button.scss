@@ -1,0 +1,40 @@
+
+
+button,
+input[type="button"],
+input[type="submit"] {
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 5px 20px 7px 20px;
+    margin: 0px auto 0px auto;
+    background: red;
+    border: none;
+    border-bottom: dotted 1px #777777;
+    box-sizing: border-box;
+    outline: none;
+    @include border-radius(5px);
+}
+
+button {
+    color: #222222;
+    border: solid 1px #555555;
+}
+
+
+// Responsive
+
+@media screen and ( max-width: $breakpoint-lg )
+{
+
+}
+
+@media screen and ( max-width: $breakpoint-md )
+{
+
+}
+
+@media screen and ( max-width: $breakpoint-wm )
+{
+    
+}

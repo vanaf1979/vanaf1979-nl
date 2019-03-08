@@ -1,0 +1,16 @@
+img {
+    display: block;
+    padding: 0em;
+    margin: 0em;
+}
+
+/* Wordpress image alignment classes */
+img.alignleft {
+    float: left;
+    margin: 0px 1px 1em 0em;
+}
+
+img.alignright {
+    float: right;
+    margin: 0px 1px 1em 0em;
+}

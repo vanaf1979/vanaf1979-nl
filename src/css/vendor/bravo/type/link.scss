@@ -1,0 +1,48 @@
+
+
+a {
+    font-size: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    outline: 0;
+
+    &:hover, &:active {
+        text-decoration: underline;
+        color: $bravo-font-anchor-color;
+    }
+}
+
+p a {
+  text-decoration: none;
+  cursor: pointer;
+  outline: 0;
+  color: $bravo-font-anchor-color;
+
+  &:hover {
+      text-decoration: underline;
+      color: $bravo-font-anchor-color;
+  }
+}
+
+ul a,
+ol a {
+    text-decoration: none;
+    color: $bravo-font-anchor-color;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+// Verplaatsen naar layout/menus
+nav ul a,
+ul.nav a,
+ul.menu a {
+    text-decoration: none;
+    color: $bravo-font-color;
+
+    &:hover {
+        text-decoration: none;
+        color: $bravo-font-anchor-color;
+    }
+}

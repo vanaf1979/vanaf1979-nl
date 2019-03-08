@@ -1,0 +1,45 @@
+
+
+nav ul, ul.nav, ul.menu  {
+    display: block;
+    margin: 0em;
+    margin-bottom: 1em;
+    padding: 0em;
+    list-style: none;
+}
+
+nav ul.hor, ul.nav.hor, ul.menu.hor {
+    display: block;
+    margin: 0em;
+    margin-bottom: 1em;
+    padding: 0em;
+    list-style: none;
+}
+    nav ul.hor li, ul.nav.hor li, ul.menu.hor li {
+        display: inline-block;
+        margin-right: $bravo-radio * 1em;
+        
+    }
+
+nav ul.hor.right, ul.nav.hor.right, ul.menu.hor.right {
+    display: block;
+    text-align: right;
+}
+    nav ul.hor.right li, ul.nav.hor.right li, ul.menu.hor.right li {
+        display: inline-block;
+        margin: 0em;
+        margin-left: $bravo-radio * 1em;
+        
+    }
+
+// nav ul a,
+// ul.nav a,
+// ul.menu a {
+//     text-decoration: none;
+//     color: $bravo-font-color;
+
+//     &:hover {
+//         text-decoration: none;
+//         color: $bravo-font-anchor-color;
+//     }
+// }

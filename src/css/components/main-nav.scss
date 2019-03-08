@@ -1,0 +1,44 @@
+
+
+.main-nav {
+
+    .logo a {
+        display: block;
+        margin: 25px 0px 25px 0px;
+        padding: 0px 0px 0px 0px;
+        font-size: 24px;
+        font-weight: 400;
+        text-decoration: none;
+    }
+
+    .nav {
+        text-align: right;
+
+        ul {
+            margin: 23px 0px 15px 0px;
+        }
+
+        .menu-header-menu-container, 
+        .menu-header-menu-en-container,
+        ul.menu.hor.right.lang {
+            display: inline-block;
+        }
+    }
+}
+
+// Responsive
+
+@media screen and ( max-width: $breakpoint-lg )
+{
+
+}
+
+@media screen and ( max-width: $breakpoint-md )
+{
+
+}
+
+@media screen and ( max-width: $breakpoint-wm )
+{
+    
+}

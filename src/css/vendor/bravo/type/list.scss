@@ -1,0 +1,27 @@
+ul, ol {
+    display: inline-block;
+    margin: 0em;
+    margin-left: $bravo-radio * 1em;
+    margin-bottom: 1em;
+    padding: 0em;
+}
+
+ul {
+    list-style: initial;
+}
+
+ol {
+    list-style: decimal;
+}
+
+ul:after, ol:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+li {
+    line-height: $bravo-radio * 1em;
+    margin: 0em;
+    padding: 0em;
+}
