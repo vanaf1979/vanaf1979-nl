@@ -34,11 +34,11 @@ class Functionsphp
 		$functionsphp_public = new Functionsphp_Public( $this->get_theme_name(), $this->get_version() );
 		
 		// Enqueue styles and scripts.
-		$this->loader->add_action( 'wp_enqueue_scripts', $functionsphp_public, 'enqueue_styles' );
-		$this->loader->add_action( 'wp_enqueue_scripts', $functionsphp_public, 'enqueue_scripts' );
+		$this->loader->add_action( 'wp_enqueue_scripts', $functionsphp_public, 'enqueue_styles', 10, 1 );
+		$this->loader->add_action( 'wp_enqueue_scripts', $functionsphp_public, 'enqueue_scripts', 10, 1  );
 
 		// Add theme support.
-		$this->loader->add_action( 'after_setup_theme' , $functionsphp_public , 'add_theme_support' , 1 , 1 );
+		$this->loader->add_action( 'init' , $functionsphp_public , 'add_theme_support' , 1 , 1 );
 
 		// Register thumbnail sizes.
 		$this->loader->add_action( 'init' , $functionsphp_public , 'register_thumbnail_sizes' , 1 );
@@ -64,6 +64,7 @@ class Functionsphp
 
 		// Register custom shortcodes.
 		$this->loader->add_action( 'init' , $functionsphp_admin , 'register_shortcodes' );
+
 	}
 
 

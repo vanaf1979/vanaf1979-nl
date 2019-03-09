@@ -13,7 +13,7 @@ class Functionsphp_Admin
 	}
 
 
-	public function enqueue_styles()
+	public function enqueue_styles( $page )
 	{
 		// NOTE: wp_enqueue_style();
 		// https://developer.wordpress.org/reference/functions/wp_enqueue_style/
@@ -22,7 +22,7 @@ class Functionsphp_Admin
 	}
 
 
-	public function enqueue_scripts()
+	public function enqueue_scripts( $page )
 	{
 		// NOTE: wp_enqueue_script();
 		// https://developer.wordpress.org/reference/functions/wp_enqueue_script/
