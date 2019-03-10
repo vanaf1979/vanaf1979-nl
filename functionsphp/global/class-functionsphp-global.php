@@ -1,31 +1,32 @@
 <?php
 
-class Functionsphp_Global
-{
+class Functionsphp_Global {
 
 	private $theme_name;
 
 	private $version;
 
 
-	public function __construct( $theme_name, $version )
-	{
+	public function __construct( $theme_name, $version ) {
+
 		$this->theme_name = $theme_name;
 		$this->version = $version;
+
 	}
 
 
-	public function disable_emoji_dequeue_script()
-	{
+	public function disable_emoji_dequeue_script() {
+
 		remove_action('wp_head', 'print_emoji_detection_script', 7);
 		remove_action('wp_print_styles', 'print_emoji_styles');
 		remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
 		remove_action( 'admin_print_styles', 'print_emoji_styles' );
+
 	}
 
 
-	public function clean_up_header()
-	{
+	public function clean_up_header() {
+
 		remove_action( 'wp_head' , 'rsd_link' );
 		remove_action( 'wp_head' , 'wp_generator' );
 		remove_action( 'wp_head' , 'feed_links' , 2 );
@@ -40,11 +41,12 @@ class Functionsphp_Global
 		remove_action( 'wp_head' , 'print_emoji_detection_script' , 7 );
 		remove_action( 'wp_head' , 'wp_resource_hints' , 2 );
 		remove_action( 'wp_head' , 'rel_canonical' );
+
 	}
 
 
-	public function remove_json_api()
-	{
+	public function remove_json_api() {
+
 		remove_action( 'wp_head', 'rest_output_link_wp_head', 10 );
 		remove_action( 'wp_head', 'wp_oembed_add_discovery_links', 10 );
 		remove_action( 'rest_api_init', 'wp_oembed_register_route' );
@@ -55,12 +57,14 @@ class Functionsphp_Global
 		add_filter( 'rewrite_rules_array', '__return_false' );
 		add_filter('rest_enabled', '__return_false');
 		add_filter('rest_jsonp_enabled', '__return_false');
+
 	}
 
 	
-	public function remove_wpembed_scripts()
-	{
+	public function remove_wpembed_scripts() {
+
 		wp_deregister_script( 'wp-embed' );
+		
 	}
 
 }
