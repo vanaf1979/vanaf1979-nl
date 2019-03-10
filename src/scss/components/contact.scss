@@ -1,61 +1,101 @@
 
 
 .contact {
+
     background: #2c3339;
     background-image: url(/wp-content/themes/vanaf1979/public/img/alvaro-serrano-133360-unsplash.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    //background: #2c3339;
-}
-     .contact .inner {
+
+    .inner {
         padding: 60px 0px 60px 0px;
         background: rgba(38, 41, 46, 0.9);
-    }
-        .contact .inner .va-grid-center {
+
+        .va-grid-center {
             padding: 0px 20px 0px 20px;
         }
-    .contact header {
-        text-align: center;
-        margin: 0px 0px 30px 0px;
-    }
-        .contact header h3 {
-            color: #bbbbbb;
-            font-size: 26px;
-            //text-transform: uppercase;
-            margin: 0px 0px 0px 0px;
-            padding: 0px 0px 0px 0px;
-        }
-            .contact header h3 span {
+
+        header {
+            text-align: center;
+            margin: 0px 0px 30px 0px;
+
+            h3 {
                 color: #bbbbbb;
-                font-size: 30px;
-                text-transform: uppercase;
+                font-size: 26px;
+                margin: 0px 0px 0px 0px;
+                padding: 0px 0px 0px 0px;
+
+                span {
+                    color: #bbbbbb;
+                    font-size: 30px;
+                    text-transform: uppercase;
+                }
             }
-        .contact header p {
-            color: #bbbbbb;
+
+            p {
+                color: #bbbbbb;
+            }
         }
 
-    .contact .left .va-formwrapper {
-        margin: 0px 10px 20px 0px;
-    }
-    .contact .right .va-formwrapper {
-        margin: 0px 0px 20px 10px;
-    }
-
-        .contact .va-formwrapper input[type="submit"] {
-            margin: 20px auto 0px auto;
-            padding: 2px 20px 2px 20px;
-            height: 36px;
-            color: #bbbbbb;
-            transition: all 0.2s ease;
-            background: none;
-            border-radius: none;
-            border-bottom: solid 1px #efefef;
+        .left .va-formwrapper {
+            margin: 0px 10px 20px 0px;
         }
-            .contact .va-formwrapper input[type="submit"]:hover {
-                border-bottom: solid 1px #aaaaaa;
-                padding: 2px 25px 2px 25px;
+
+        .right .va-formwrapper {
+            margin: 0px 0px 20px 10px;
+        }
+
+        .va-formwrapper {
+
+            input[type="text"], input[type="email"], textarea {
+                background: none;
+                border: none;
+                border-bottom: dotted 1px #aaaaaa;
+                border-radius: 0px;
+                color: #dddddd;
+
+                font-size: 14px;
+
+                &:focus {
+                    border-bottom: dotted 1px #dddddd;
+                }
+
+                &::placeholder {
+                    color: #aaaaaa;
+                }
+
+                &:invalid {
+                    border: none;
+                    border-bottom: dotted 1px rgb(226, 85, 109);
+                    box-shadow: none;
+                }
+
+                &:valid {
+                    color: #dddddd;
+                }
             }
+            
+            input[type="submit"] {
+                margin: 20px auto 0px auto;
+                padding: 2px 20px 2px 20px;
+                height: 36px;
+                color: #bbbbbb;
+                transition: all 0.2s ease;
+                background: none;
+                border-radius: 0px;
+                border-bottom: dotted 1px #aaaaaa;
+
+                &:hover {
+                    border-bottom: dotted 1px #aaaaaa;
+                    padding: 2px 25px 2px 25px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
 
 @media screen and ( max-width: 1024px )
 {
@@ -69,13 +109,10 @@
 
 @media screen and ( max-width: 568px )
 {
-    .contact header h3 span {
-        display: block;
+    .contact .inner header h3, .contact .inner header h3 span {
+       font-size: 24px;
     }
-    .contact header p {
-        display: none;
-    }
-    .contact .left .va-formwrapper, .contact .right .va-formwrapper {
+    .contact .inner .left .va-formwrapper, .contact .inner .right .va-formwrapper {
         margin: 0px 0px 30px 0px;
     }
 

@@ -2,58 +2,80 @@
 
 .writingheader {
     margin: 60px 0px 40px 0px;
-    text-align: center;
-}
-    .writingheader h2 {
+	text-align: center;
+	
+	h2 {
         font-size: 30px;
         color: #00659b;
     }
+}
+
 
 .writing {
 	margin: 0px auto 60px auto;
-}
-	.writing .item {
+
+	.item {
 		display: flex;
 		flex-flow: row;
 		margin: 0px auto 20px auto;
-	}
-		.writing .item:nth-child(even) {
+
+		&:nth-child(even) {
 			display: flex;
 			flex-flow: row-reverse;
 		}
-		
-		.writing .item .image img {
-			display: block;
-			width: 100%;
-			height: auto;
-			border-radius: 3px;
-		}
-		
-		.writing .item:nth-child(even) .text article {
-			margin: 50px 50px 0px 20px;
-		}
-			.writing .item .text article {
-				margin: 50px 20px 0px 50px;
+
+		&:nth-child(odd) {
+			
+			.text {
+				
+				article {
+					margin: 50px 20px 0px 50px;
+				}
 			}
-            .writing .item .text article h3 {
-                color: #00659b;
-                font-size: 22px;
-            }
-			.writing .item .text article a {
-				display: inline-block;
-				width: auto;
-				padding: 5px 10px 6px 10px;
-				margin: 5px 0px 0px 0px;
-                border: solid 1px #bbbbbb;
-				color: #444756;
-                border-radius: 3px;
-                transition: all 0.2s ease;
-            }
-                .writing .item .text article a:hover {
-                    border: solid 1px #00659b;
-                    color: #00659b;
-                    text-decoration: none;
-                }
+		}
+
+		.image {
+
+			img {
+				display: block;
+				width: 100%;
+				height: auto;
+				border-radius: 3px;
+			}
+		}
+
+		.text {
+
+			article {
+				margin: 50px 50px 0px 20px;
+
+				h3 {
+					color: #00659b;
+					font-size: 22px;
+				}
+
+				a {
+					display: inline-block;
+					width: auto;
+					padding: 5px 10px 6px 10px;
+					margin: 5px 0px 0px 0px;
+					border: solid 1px #bbbbbb;
+					color: #444756;
+					border-radius: 3px;
+					transition: all 0.2s ease;
+
+					&:hover {
+						border: solid 1px #00659b;
+						color: #00659b;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+		
 			
 @media screen and ( max-width: 1024px )
 {
@@ -68,13 +90,14 @@
 @media screen and ( max-width: 568px )
 {
 	.writing .item {
-		flex-flow: column;
-		margin: 0px auto 20px auto;
-	}
-	.writing .item:nth-child(even) {
-		flex-flow: column;
-	}
-	.writing .item .text article {
-		margin: 20px 0px 40px 00px;
+		
+		&:nth-child(2n), &:nth-child(2n+1) {
+			flex-flow: column;
+
+			.text article {
+				margin: 20px 0px 40px 0px;
+				text-align: center;
+			}
+		}
 	}
 }

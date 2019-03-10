@@ -14,7 +14,7 @@
 
 </section>
 
-<section class="writing row-center">
+<section class="writing row">
             
     <div class="item pure-g row-center">
 

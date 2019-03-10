@@ -2834,7 +2834,6 @@ html, body {
   margin: 60px 0px 40px 0px;
   text-align: center;
 }
-
 .writingheader h2 {
   font-size: 30px;
   color: #00659b;
@@ -2843,38 +2842,31 @@ html, body {
 .writing {
   margin: 0px auto 60px auto;
 }
-
 .writing .item {
   display: flex;
   flex-flow: row;
   margin: 0px auto 20px auto;
 }
-
 .writing .item:nth-child(even) {
   display: flex;
   flex-flow: row-reverse;
 }
-
+.writing .item:nth-child(odd) .text article {
+  margin: 50px 20px 0px 50px;
+}
 .writing .item .image img {
   display: block;
   width: 100%;
   height: auto;
   border-radius: 3px;
 }
-
-.writing .item:nth-child(even) .text article {
+.writing .item .text article {
   margin: 50px 50px 0px 20px;
 }
-
-.writing .item .text article {
-  margin: 50px 20px 0px 50px;
-}
-
 .writing .item .text article h3 {
   color: #00659b;
   font-size: 22px;
 }
-
 .writing .item .text article a {
   display: inline-block;
   width: auto;
@@ -2885,7 +2877,6 @@ html, body {
   border-radius: 3px;
   transition: all 0.2s ease;
 }
-
 .writing .item .text article a:hover {
   border: solid 1px #00659b;
   color: #00659b;
@@ -2893,17 +2884,12 @@ html, body {
 }
 
 @media screen and (max-width: 568px) {
-  .writing .item {
-    flex-flow: column;
-    margin: 0px auto 20px auto;
-  }
-
-  .writing .item:nth-child(even) {
+  .writing .item:nth-child(2n), .writing .item:nth-child(2n+1) {
     flex-flow: column;
   }
-
-  .writing .item .text article {
+  .writing .item:nth-child(2n) .text article, .writing .item:nth-child(2n+1) .text article {
     margin: 20px 0px 40px 0px;
+    text-align: center;
   }
 }
 .article {
@@ -2951,72 +2937,90 @@ html, body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .contact .inner {
   padding: 60px 0px 60px 0px;
   background: rgba(38, 41, 46, 0.9);
 }
-
 .contact .inner .va-grid-center {
   padding: 0px 20px 0px 20px;
 }
-
-.contact header {
+.contact .inner header {
   text-align: center;
   margin: 0px 0px 30px 0px;
 }
-
-.contact header h3 {
+.contact .inner header h3 {
   color: #bbbbbb;
   font-size: 26px;
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
 }
-
-.contact header h3 span {
+.contact .inner header h3 span {
   color: #bbbbbb;
   font-size: 30px;
   text-transform: uppercase;
 }
-
-.contact header p {
+.contact .inner header p {
   color: #bbbbbb;
 }
-
-.contact .left .va-formwrapper {
+.contact .inner .left .va-formwrapper {
   margin: 0px 10px 20px 0px;
 }
-
-.contact .right .va-formwrapper {
+.contact .inner .right .va-formwrapper {
   margin: 0px 0px 20px 10px;
 }
-
-.contact .va-formwrapper input[type=submit] {
+.contact .inner .va-formwrapper input[type=text], .contact .inner .va-formwrapper input[type=email], .contact .inner .va-formwrapper textarea {
+  background: none;
+  border: none;
+  border-bottom: dotted 1px #aaaaaa;
+  border-radius: 0px;
+  color: #dddddd;
+  font-size: 14px;
+}
+.contact .inner .va-formwrapper input[type=text]:focus, .contact .inner .va-formwrapper input[type=email]:focus, .contact .inner .va-formwrapper textarea:focus {
+  border-bottom: dotted 1px #dddddd;
+}
+.contact .inner .va-formwrapper input[type=text]::-webkit-input-placeholder, .contact .inner .va-formwrapper input[type=email]::-webkit-input-placeholder, .contact .inner .va-formwrapper textarea::-webkit-input-placeholder {
+  color: #aaaaaa;
+}
+.contact .inner .va-formwrapper input[type=text]:-ms-input-placeholder, .contact .inner .va-formwrapper input[type=email]:-ms-input-placeholder, .contact .inner .va-formwrapper textarea:-ms-input-placeholder {
+  color: #aaaaaa;
+}
+.contact .inner .va-formwrapper input[type=text]::-ms-input-placeholder, .contact .inner .va-formwrapper input[type=email]::-ms-input-placeholder, .contact .inner .va-formwrapper textarea::-ms-input-placeholder {
+  color: #aaaaaa;
+}
+.contact .inner .va-formwrapper input[type=text]::placeholder, .contact .inner .va-formwrapper input[type=email]::placeholder, .contact .inner .va-formwrapper textarea::placeholder {
+  color: #aaaaaa;
+}
+.contact .inner .va-formwrapper input[type=text]:invalid, .contact .inner .va-formwrapper input[type=email]:invalid, .contact .inner .va-formwrapper textarea:invalid {
+  border: none;
+  border-bottom: dotted 1px #e2556d;
+  box-shadow: none;
+}
+.contact .inner .va-formwrapper input[type=text]:valid, .contact .inner .va-formwrapper input[type=email]:valid, .contact .inner .va-formwrapper textarea:valid {
+  color: #dddddd;
+}
+.contact .inner .va-formwrapper input[type=submit] {
   margin: 20px auto 0px auto;
   padding: 2px 20px 2px 20px;
   height: 36px;
   color: #bbbbbb;
   transition: all 0.2s ease;
   background: none;
-  border-radius: none;
-  border-bottom: solid 1px #efefef;
+  border-radius: 0px;
+  border-bottom: dotted 1px #aaaaaa;
 }
-
-.contact .va-formwrapper input[type=submit]:hover {
-  border-bottom: solid 1px #aaaaaa;
+.contact .inner .va-formwrapper input[type=submit]:hover {
+  border-bottom: dotted 1px #aaaaaa;
   padding: 2px 25px 2px 25px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 568px) {
-  .contact header h3 span {
-    display: block;
+  .contact .inner header h3, .contact .inner header h3 span {
+    font-size: 24px;
   }
 
-  .contact header p {
-    display: none;
-  }
-
-  .contact .left .va-formwrapper, .contact .right .va-formwrapper {
+  .contact .inner .left .va-formwrapper, .contact .inner .right .va-formwrapper {
     margin: 0px 0px 30px 0px;
   }
 }
