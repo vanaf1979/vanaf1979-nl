@@ -1,3 +1,4 @@
+
 import Utils from '../../components/utils/index.js';
 import inView from 'in-view';
 import Swiper from 'swiper';
@@ -9,37 +10,38 @@ var HeaderSlider = {
     slider: null,
 
 
-    init: function()
-    {
+    init: function() {
+
         this.slider = Utils.find( '.swiper-container' );
 
         // Is the slider present on the page?
-        if( this.slider )
-        {
+        if( this.slider ) {
             
             var slides = Utils.findAll( '.swiper-slide' , this.slider );
             
             // Are there multiple slides?
-            if( slides.length > 1 )
-            {
+            if( slides.length > 1 ) {
+
                 this.sliderInView();
-            }
-            else
-            {
+
+            } else {
+
                 console.debug( 'Only one slide detected. Adding Swiper is pointless' );
                 return;
+
             }
-        }
-        else
-        {
+
+        } else {
+           
             console.debug( 'No slider detected.' );
             return;
+
         }
     },
 
 
-    sliderInView: function()
-    {
+    sliderInView: function() {
+        
         inView.offset(-50);
 
         inView( '.swiper-container' ).on( 'enter', ( el ) => {
@@ -51,16 +53,16 @@ var HeaderSlider = {
             this.deactivateSwiper();
 
         })
+
     },
 
 
-    activateSwiper: function()
-    {
-        if( ! this.swiper )
-        {
+    activateSwiper: function() {
+        
+        if( ! this.swiper ) {
+
             // Reveal the Swiper controls.
             this.activateSwiperControls(); 
-            console.log('here');
 
             // Initialize Swiper.
             this.swiper = new Swiper( this.slider , {
@@ -85,12 +87,14 @@ var HeaderSlider = {
         
             // Attach Swiper event handlers.
             this.handleSwiperEvents();
+
         }
+
     },
 
 
-    activateSwiperControls: function()
-    {
+    activateSwiperControls: function() {
+
         var pagination = Utils.find( '.swiper-pagination' , this.slider );
         pagination.classList.remove('inactive');
 
@@ -99,21 +103,23 @@ var HeaderSlider = {
 
         var buttonPrev = Utils.find( '.swiper-button-prev' , this.slider );
         buttonPrev.classList.remove('inactive');
+
     },
 
 
-    handleSwiperEvents: function()
-    {
+    handleSwiperEvents: function() {
+
         this.swiper.on('slideChangeTransitionStart', () => {
             
             this.animateSlideContent( this.swiper.slides[ this.swiper.activeIndex ] );
 
         });
+
     },
 
 
-    animateSlideContent: function( slide )
-    {
+    animateSlideContent: function( slide ) {
+
         var innerEllements = Utils.findAll( '.inner article > *', slide);
         anime({
             easing: 'easeInOutQuad',
@@ -125,17 +131,21 @@ var HeaderSlider = {
                 return i * 150;
             },
         });
+
     },
 
 
-    deactivateSwiper: function()
-    {
-        if( this.swiper )
-        {
+    deactivateSwiper: function() {
+        
+        if( this.swiper ) {
+
             this.swiper.destroy( true , false );
             this.swiper = null;
+
         }
+
     }
+
 }
 
 
